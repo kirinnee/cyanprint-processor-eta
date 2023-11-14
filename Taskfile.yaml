@@ -1,0 +1,7 @@
+version: "3"
+
+tasks:
+  run:
+    desc: Run the template
+    cmds:
+      - bun run index.ts
