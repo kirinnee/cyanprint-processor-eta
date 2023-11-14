@@ -47,7 +47,7 @@ echo "🔨 Building processor Dockerfile..."
 # build blob image
 docker buildx build \
   -f "Dockerfile" \
-  . \
+  "." \
   --platform="linux/arm64,linux/amd64" \
   --push \
   -t "${PROCESSOR_COMMIT_IMAGE_REF}"
